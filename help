@@ -1,0 +1,72 @@
+'ok I have no idea how to code in python, I took one class about it but I lack any real knowledge on how to actually code in python, and leetocde is not helping as it is INSANELY hard'
+'I know loops and thats about it'
+'help me lads'
+'heres a rock paper scissors game i managed to make'
+
+
+  
+rock = 1
+paper = 2
+scissors = 3
+botchoice = random.randint(1,3)
+print('Rock Paper Scissors!')
+
+userchoice = input('Chose your option: ')
+time.sleep(1)
+print('Rock!')
+time.sleep(1)
+print('Paper!')
+time.sleep(1)
+print('Scissors!')
+time.sleep(3)
+print('Shoot!')
+
+if botchoice == 1:
+    botchoice = 'Rock'
+
+if botchoice == 2:
+    botchoice = 'Paper'
+
+if botchoice == 3:
+    botchoice = 'Scissors'
+    
+
+
+print('')
+print('Bot:',botchoice)
+print('========')
+print('You:',userchoice)
+
+if userchoice == 'Rock':
+    userchoice = rock
+
+if userchoice == 'Paper':
+    userchoice = paper
+
+if userchoice =='Scissors':
+    userchoice = scissors
+
+if botchoice == 'Rock':
+    botchoice = 1
+
+if botchoice == 'Paper':
+    botchoice = 2
+
+if botchoice == 'Scissors':
+    botchoice = 3
+    
+if userchoice == 'Rock':
+    userchoice = rock
+
+if userchoice == 'Paper':
+    userchoice = paper
+
+if userchoice =='Scissors':
+    userchoice = scissors
+
+if userchoice == botchoice:
+    print('Tie!')
+if userchoice < botchoice:
+    print('You Lose!')
+if userchoice > botchoice:
+    print('You win!')
